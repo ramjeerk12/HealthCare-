@@ -1,0 +1,137 @@
+.pt-nav {
+  padding-top: 8rem;
+}
+
+.appointment-container {
+  display: flex;
+  gap: 4rem;
+  background: #fff;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.appointment-info {
+  flex: 1;
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.appointment-info h2 {
+  color: #fff;
+}
+
+.appointment-info p {
+  color: #d1d5db;
+  margin-bottom: 2rem;
+}
+
+.info-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 2rem;
+}
+
+.info-box h3 {
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hotline {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.appointment-img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  margin-top: auto;
+  opacity: 0.8;
+}
+
+.appointment-form-wrapper {
+  flex: 1.5;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.appointment-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: var(--border-radius);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 3px rgba(78, 159, 61, 0.2);
+}
+
+.submit-btn {
+  width: 100%;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.success-message {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.success-icon {
+  font-size: 5rem;
+  color: var(--color-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.success-message h2 {
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 960px) {
+  .appointment-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
